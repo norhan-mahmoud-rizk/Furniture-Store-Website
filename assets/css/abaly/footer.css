@@ -1,0 +1,253 @@
+ul {
+    list-style: none;
+}
+
+/* .hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+  } */
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  
+  @media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 20px;
+    font-size: 16px;
+    background-color: var(--back-color);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: var(--main-transition);
+}
+#scrollToTopBtn:hover {
+    background-color: black;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+footer {
+    margin-top: 70px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer .container {
+    padding: 70px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  footer .container .box {
+    width: 25%;
+    min-width: 200px;
+  }
+  footer .container .box p {
+    width: 70%;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  footer .container .box p span{
+    color: var(--back-color);
+  }
+  
+  footer .container .box .logo {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  footer .container .box a img {
+    width: 70%;
+  }
+  
+  footer .container .box ul li {
+    margin-top: 11px;
+  }
+  
+  footer .container .box ul li a {
+    text-decoration: none;
+    color: black;
+    transition: var(--main-transition);
+  }
+  
+  footer .container .box ul li a:hover {
+    color: var(--back-color);
+  }
+  
+  footer .copyright {
+    padding: 10px 0;
+    border-top: 1px solid #a8a8a8;
+    width: 80%;
+    text-align: center;
+  }
+  
+  
+  
+  @media screen and (max-width: 500px) {
+   
+    footer .container {
+        flex-direction: column;
+  
+    }
+  }
+
+
+
+
+
+
+  /* ------------------------------------------------------------------- */
+  .main-nav {
+    background-color: white;
+    padding: 20px 25px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+}
+
+.main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-nav .container .logo {
+    font-size: 40px;
+}
+
+.main-nav .container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main-nav .container ul li {
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.main-nav .container ul li::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--back-color);
+    transition: var(--main-transition);
+
+}
+
+.main-nav .container ul li:hover::after {
+    width: 100%;
+}
+
+.main-nav .container a {
+    text-decoration: none;
+    color: black;
+    transition: var(--main-transition);
+   overflow: hidden;
+   position: relative;
+}
+
+.main-nav .container ul li:hover a {
+    color: var(--back-color);
+
+}
+
+.main-nav .container ul.icons li::after {
+    width: 0;
+    height: 0;
+}
+
+
+@media screen and (max-width: 992px) {
+    .main-nav .container ul li {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main-nav .container {
+        flex-direction: column;
+    }
+}
+
+
+
+.blog-head {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+.blog-head img {
+  width: 80%;
+  margin-top: 200px;
+}
+.blog-head .img1 {
+  display: flex;
+  justify-content: end;
+}
+.blog-head .blog-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 87px;
+  width: 335px;
+  background-color: white;
+  height: 330px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.blog-head .blog-title ul {
+  display: flex;
+  list-style-type: none;
+  margin-top: 20px;
+  height: 20px;
+}
+.blog-head .blog-title ul li {
+  display: block;
+  padding-left: 0.5rem;
+}
+.blog-head .blog-title ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+.blog-head .blog-title ul li a:hover {
+  color: #E97730;
+}
+.blog-head .blog-title h1 {
+  font-size: 60px;
+}

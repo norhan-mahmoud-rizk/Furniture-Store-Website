@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  #f8f5f5;
+   
+}
+.image{
+    background-image: url('./imag.jpg');
+    height: 450px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image .para{
+text-align: center;
+padding-top: 200px;
+}
+/* .image p{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 40px;
+} */
+/* this part for the rounded circle div in the image */
+.image .whiteCircle{
+    position: absolute;
+    border-radius: 50%;
+    bottom:-4%;
+    height: 380px;
+    width: 380px;
+    background-color:  #f8f5f5;
+}
+.image  p{
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 500;
+
+
+}
+.image .back{
+    position: absolute;
+    top: 60%;
+    
+}
+.image .back a{
+    text-decoration: none;
+    color: black;
+}
+.pairnt{
+    width: 50%;
+    height: 500px;
+    background-color: lightgray;
+    margin: 80px 350px;
+    /* margin: auto; */
+}
+.pairnt a{
+    
+    font-size: 40px;
+    color: #fd7e14;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.pairnt .link{
+    display: flex;
+}
+.pairnt .link1{
+    margin-left: 200px;
+    
+}
+.pairnt .link2{
+    margin-left: 10px;
+}
+.pairnt .user{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.pairnt  .inputs{
+    border: none;
+    height: 40px;
+    width: 80%;
+    border-radius: 5px;
+   
+}
+.pairnt #form1{
+    margin-left: 40px;
+}
+.pairnt #form2{
+    margin-left: 40px;
+}
+
+.pairnt #form1 .rem{
+    display: inline;
+    margin-top: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    /* height: 30px; */
+}
+.pairnt #form1 label,input{
+    display: block;
+    padding-left: 0.5rem;
+}
+.pairnt #form2 label,input{
+    display: block;
+    padding-left: 0.5rem;
+}
+
+.pairnt #form1 .btn{
+    width: 50%;
+    height: 50px;
+    border: 0;
+    font-size: 20px;
+    background-color: #fd7e14;
+    color: white;
+    border-radius: 5px;
+    margin-left: 80px;
+    margin-top: 80px;
+    cursor: pointer;
+    
+}
+.pairnt #form1 .btn:hover{
+    background-color: #000000;
+}
+.pairnt #form2 .btn{
+    width: 50%;
+    height: 50px;
+    border: 0;
+    font-size: 20px;
+    background-color: #fd7e14;
+    color: white;
+    border-radius: 5px;
+    margin-left: 80px;
+    margin-top: 80px;
+    cursor: pointer;
+    
+}
+.pairnt #form2 .btn:hover{
+    background-color: #000000;
+}
+.pairnt #form2 .btn{
+    width: 50%;
+    height: 50px;
+    border: 0;
+    font-size: 20px;
+    background-color: #fd7e14;
+    color: white;
+    border-radius: 5px;
+    margin-left: 80px;
+    margin-top: 80px;
+    cursor: pointer;
+    
+}

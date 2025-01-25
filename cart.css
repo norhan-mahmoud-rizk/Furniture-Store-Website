@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image{
+    background-image: url('./imag.jpg');
+    height: 450px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image .para{
+text-align: center;
+padding-top: 200px;
+}
+/* .image p{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 40px;
+} */
+/* this part for the rounded circle div in the image */
+.image .whiteCircle{
+    position: absolute;
+    border-radius: 50%;
+    bottom:-4%;
+    height: 380px;
+    width: 380px;
+    background-color:  white;
+}
+.image  p{
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 500;
+
+
+}
+.image .back{
+    position: absolute;
+    top: 60%;
+    
+}
+.image .back a{
+    text-decoration: none;
+    color: black;
+}
+table{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.prod{
+    
+    background-color:#e9ecef;
+    height: 60px;
+    /* margin-top: 100px; */
+    border-radius: 10px;
+    /* padding: 15px; */
+    font-size: 24px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.first{
+    width: 40%;
+/* padding-left: 300px; */
+text-align: center;
+
+}
+.second{
+    width: 10%;
+    /* padding-left: 150px; */
+    text-align: center;
+}
+.therd{
+    width: 10%;
+    /* padding-left: 100px; */
+    text-align: center;
+}
+.four{
+    width: 10%;
+    /* padding-left: 100px; */
+    text-align: center;
+}
+
+.imgs{
+    margin-top: 30px;
+    padding-left: 130px;
+    height: 100px;
+
+}
+.cartLocal{
+display: flex;
+}
+.imgName{
+    padding-top: 70px;
+    padding-left: 20px;
+}
+.imgPrice{
+    /* padding-top: 80px;
+    padding-left: 130px;*/
+    font-size: 24px; 
+    text-align: center;
+}
+.Quantity{
+    width: 55px;
+    height: 55px;
+    color: #8f8f8f;
+    font-size: 1.3rem;
+    padding-left: 5%;
+    margin-right: 4%;
+    margin-left: 50px;
+}
+.btn{
+    all: unset;
+    margin: 10px;
+    font-size: 20px;
+   
+
+}
+.padQuan{
+    padding: 30px;    
+}
+.fa-solid{
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(90px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+
+.scrollToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    display: none;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #e97730;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:  0.4s;
+}
+.scrollToTop:hover {
+    background-color: black;
+}

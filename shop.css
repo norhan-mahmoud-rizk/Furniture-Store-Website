@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Montserrat, sans-serif;
+    font-weight: 500;  
+}
+/* headerpart */
+.imageHeader{
+    background-image: url("./images/bg-3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    height:500px;
+    margin-bottom: 9%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* this part for the rounded circle div in the image */
+.imageHeader .whiteCircle{
+    position: absolute;
+    border-radius: 50%;
+    bottom:-6%;
+    height: 370px;
+    width: 370px;
+    background-color:white;
+}
+/* for the animation to make the elemnet hidden at the fisrt*/
+.imageHeader p, 
+.imageHeader .back ,
+.detailsContainer .imgPart,
+.detailsContainer .detailsPart,
+.descrtionHeader,
+.anotherDesginContainer,
+.productContainer .product{
+    opacity: 0;
+    visibility: hidden;
+}
+.imageHeader p {
+    position: absolute;
+    font-size: 3rem;
+    animation: appear 1s ease-in-out forwards; 
+    animation-delay: 0s;
+    visibility: visible; 
+}
+.imageHeader .back {
+    position: absolute;
+    top: 60%; 
+    animation: appear 1s ease-in-out forwards;
+    animation-delay: 0.4s;
+    visibility: visible; 
+}
+.imageHeader .back a{
+    text-decoration: none;
+    color: black;
+}
+.imageHeader .back a:hover,
+.productContainer .product a p:hover{
+    transition: .4s;
+    color: #e97730;
+}
+.imageHeader .back span{
+    color: #8f8f8f;
+}
+/* shop page  */
+.change {
+    padding-top:1% ;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    display: flex; 
+    justify-content: end;
+    width: 90%;
+     margin: auto; 
+}
+.change button{
+    font-size: 15px;
+    padding: 1%;
+     margin-right: 1%;
+     border: none;
+      cursor: pointer;
+}
+.productContainer{
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.productContainer .product {
+    width: 25%;
+    margin-bottom: 5%;
+    line-height: 1.3;
+
+    /* the animation of th product the show  */
+    /* animation: appear 1s ease-in-out forwards; 
+    animation-delay: 0s;
+    visibility: visible; */
+}
+.productContainer .product a {
+    text-decoration: none;
+    color: black;
+}
+.productContainer .product  img{
+    width: 90%; 
+   height: 300px; 
+}
+/* image hover */
+.hoverContent{
+    width: 90%; 
+    height: 100%;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+    transition-timing-function: ease-in-out;
+    opacity: 0;
+    text-align: center;
+ }
+
+.productContainer .product .imageHover{
+    width: 100%;
+    position: relative;
+}
+.hoverContent:hover{
+    opacity: 1;
+}
+.productContainer .product .imageHover .hoverContent .icons{
+   width: 100%;
+}
+.productContainer .product .imageHover .hoverContent .icons a button{
+padding: 5%;
+ margin: 0 3% 0 3%;
+ border-radius: 25%;
+ cursor: pointer;
+ background-color: white;
+color: #555252;
+ border: none;
+ font-size: 18px;
+}
+.productContainer .product .imageHover .hoverContent .addCard button p{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    left: 0;
+    padding: 5%;
+    font-size: 18px;
+    cursor: pointer;
+}
+.productContainer .product .imageHover .hoverContent .addCard button p:hover,
+.anotherDesginContainer .rightSide .buttons button:hover,
+.detailsContainer .imgPart button:hover,
+.detailsContainer .detailsPart .iconsPart button:hover,
+.productContainer .product .imageHover .hoverContent .icons a button:hover{
+    color: white;
+    background-color: #e97730;
+    transition: .4s;
+    transition-timing-function: ease-in-out; 
+}
+/* the styles under the images */
+.productContainer .product .underImage{
+    padding-top: 3%;
+    line-height: 1.4;
+}
+.productContainer .product .underImage  .before{
+    text-decoration: line-through;
+    color:  #555252;
+    padding-right: 3%;
+    font-size: 18px;
+}
+.productContainer .product .underImage  .after{
+    color: rgb(253, 23, 165);
+    font-size: 18px;
+}
+/* another design page */
+.anotherDesginContainer{
+    display: flex; 
+    width: 90%; 
+    margin: auto; 
+    margin-bottom: 3%;
+    /* the animation */
+    animation: appear 1s ease-in-out forwards; 
+    animation-delay: 0s;
+    visibility: visible;
+}
+.anotherDesginContainer .leftSide{
+    width: 30%;  
+}
+.anotherDesginContainer .rightSide{
+    width: 70%; padding-left: 2%; line-height: 2;
+}
+.anotherDesginContainer .rightSide .title{
+    font-size: 2rem;
+}
+.anotherDesginContainer .rightSide .before{
+    color: #555252; 
+    text-decoration: line-through;
+    font-size: 1.3rem; 
+    margin-right: 1%; 
+}
+.anotherDesginContainer .rightSide .after{
+    color:rgb(253, 23, 165); font-size: 1.3rem;
+}
+.anotherDesginContainer .rightSide .stars,
+.descrtionHeader .review i,
+.detailsContainer .detailsPart .after,
+.detailsContainer .detailsPart .rating .stars{
+    color: #e97730;
+}
+.anotherDesginContainer .rightSide .buttons{
+    margin-top:3%
+}
+.anotherDesginContainer .rightSide .buttons button{
+    padding: 2%;
+    margin-right: 2%;
+    border: none;
+    box-shadow: 0 0 5px #555252;
+    border-radius: 10%;
+    background-color: transparent;
+}
+/* details page styles */
+.details{
+
+
+    margin-bottom: 125px;
+}
+.detailsContainer{
+    display: flex;
+    width: 70%;
+    margin: auto;
+
+    /* height: 400px; */    
+}
+.detailsContainer .imgPart,.detailsPart{
+    width: 50%;
+}
+.detailsContainer .imgPart {
+    position: relative;
+}
+/* the style of dialog */
+.detailsContainer .imgPart .dialog{
+     width: 30%;
+     margin: auto;
+     border: none; 
+    
+}
+.detailsContainer .imgPart .dialog::backdrop {
+    background:rgb(85, 85, 85);
+    opacity: .5;
+  }
+.detailsContainer .imgPart .dialog .cancel{
+    padding: 3%; 
+    background-color: transparent;
+    color: black;  
+}
+.detailsContainer .imgPart .dialog img{
+    width: 405px;
+}
+.detailsContainer .imgPart img,
+.descrtionHeader .reviewContent .leftSide img,
+.anotherDesginContainer .leftSide a img{
+    width: 100%;
+    height: 100%;
+}
+.detailsContainer .imgPart button{
+  position: absolute;
+  right: 0;
+  padding: 5%;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+}
+.detailsContainer .detailsPart {
+  padding-left: 3%;
+  line-height: 2;
+}
+.detailsContainer .detailsPart .title{
+   font-size: 2rem;
+}
+
+.detailsContainer .detailsPart .before{
+    color: #555252;
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    margin-right: 2%;
+}
+.detailsContainer .detailsPart .after{
+font-size: 1.4rem;
+}
+.detailsContainer .detailsPart .rating{
+    display: flex;
+}
+.detailsContainer .detailsPart .rating .stars,.customReview{
+width: 50%;
+}
+.detailsContainer .detailsPart .buttons{
+    margin: 5% 0 5% 0;
+}
+.detailsContainer .detailsPart .buttons input{
+    width: 65px;
+    height: 65px;
+    color: #8f8f8f;
+    font-size: 1.3rem;
+    padding-left: 2%;
+    margin-right: 4%;
+}
+.detailsContainer .detailsPart .buttons button{
+    padding: 5%;
+    background-color: #e97730;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.detailsContainer .detailsPart .lastPart span{
+   
+    font-size: 1.2rem;
+    color: rgb(43, 42, 42);
+}
+.detailsContainer .detailsPart .lastPart{
+    color: #8f8f8f;
+    font-size: 1.1rem;
+    padding-bottom: 3%;
+   border-bottom: 1px solid #8f8f8f;
+   margin-bottom: 5%;
+}
+
+.detailsContainer .detailsPart .iconsPart button{
+    padding: 3%;
+    border: none;
+  color:  #535353;
+    margin-right: 2%;
+    cursor: pointer;
+    font-size: 18px;
+}
+ .descrtionHeader{
+    width: 90%;
+     margin: auto;
+       text-align: center;
+        margin-top: 4%; 
+        margin-bottom: 4%;
+       
+}
+.descrtionHeader .desInfoHeader{
+    padding-top: 1%;
+     padding-bottom: 1%;
+     background-color: #f2f2f2; 
+     color:#919191;
+}
+.descrtionHeader .desInfoHeader button{
+    border: none;
+    background-color: transparent;
+    margin-right: 2%;
+    font-size: 18px;
+    cursor: pointer;
+    color: #535353; 
+}
+.descrtionHeader p{
+    padding-top: 3%;
+     color: #535353;
+ 
+}
+.descrtionHeader table{
+        width: 100%; 
+        text-align: left;
+        border: 1px solid gray;
+        margin-top: 4%;
+        margin-bottom: 5%;  
+        border-collapse: collapse;
+}
+.descrtionHeader table tr .leftSide,
+.descrtionHeader table tr .rightSide{
+
+    width: 30%; border: 1px solid gray;padding: 10px;
+}
+.descrtionHeader table tr .rightSide{
+    width: 70%;
+}
+.descrtionHeader .review{
+    margin-top: 3%;
+    text-align: left;
+    line-height: 2;
+}
+.descrtionHeader .reviewContent{
+    text-align: left; 
+    display: flex;
+     margin-top: 2%;
+}
+.descrtionHeader .reviewContent .leftSide{
+    width: 10%;
+}
+.descrtionHeader .reviewContent .rightSide{
+    width: 90%;
+     margin-left: 3%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(90px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+
+.scrollToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    display: none;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #e97730;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:  0.4s;
+}
+.scrollToTop:hover {
+    background-color: black;
+}

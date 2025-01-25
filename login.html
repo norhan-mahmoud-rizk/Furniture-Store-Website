@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="assets\images\sofa1.png">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="assets/css/abaly/footer.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav">
+            <div class="container">
+                <div class="logo"><a href="#">Logo</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shoppage.html">Shop</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="image">
+        <div class="whiteCircle">
+        
+        </div>
+        
+            <p> Login </p>
+           <!-- <p>-</p>
+           <p>Register</p> -->
+           
+  <div class="back"><a href="index.html">Home</a><span>   &gt; Login - Register</span></div>
+    </div>
+    <!-- <img class="firstImg" src="imag.jpg"> -->
+    <div class="pairnt">
+        <div class="link">
+            <a class="link1" href="#" id="link1">Login |</a>
+        <a class="link2" href="#" id="link2">Register</a>
+        </div>
+        <form action="" class="LogForm" target="_self" onsubmit="saveCred(event)">
+            <div id="form1">
+                <label for="userName" class="user">User Name : </label>
+                <input type="text" placeholder="User Name" name="userName" class="inputs" id="userName" required>
+                <label for="pass" class="user">Password : </label>
+                <input type="password" placeholder="Password" name="pass" class="inputs" id="password" required>
+                <input type="checkbox" name="rem" class="rem" id="rememberMe">
+                <label for="rememberMe" class="rem"> Remember me</label>
+                <input type="submit" class="btn" value="Login">
+            </div>
+        <div id ='form2'>
+        <label for="userName" class="user">User Name : </label>
+        <input type="text" placeholder="User Name" name="userName" class="inputs" id="input">
+        <label for="pass" class="user">password : </label>
+        <input type="password" placeholder="password" name="pass" class="inputs" id="input2">
+        <label for="email" class="user">Email : </label>
+        <input type="email" placeholder="Email" class="inputs">
+        <input type="submit" name="" class="btn" value="Register">
+       </div>
+        </form>
+        
+       
+       
+
+       <!-- <form action="" class="RegForm" target="_self">
+       </form> -->
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="box">
+                <div class="logo hidden">Logo</div>
+                <p class="hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit </p>
+                <a class="hidden" href="#">
+                    <img src="./images/payment.png" alt="">
+                </a>
+            </div>
+
+            <div class="box">
+                <h1 class="hidden">Information</h1>
+                <ul>
+                    <li class="hidden"><a href="about.html">About Us</a></li>
+                    <li class="hidden"><a href="#">Delivery Information</a></li>
+                    <li class="hidden"><a href="#">Privacy Policy</a></li>
+                    <li class="hidden"><a href="#">Terms & Conditions</a></li>
+                    <li class="hidden"><a href="contact-us.html">Customer Service</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h1 class="hidden">My Account</h1>
+                <ul>
+                    <li class="hidden"><a href="login.html">My Account</a></li>
+                    <li class="hidden"><a href="cart.html">Order History</a></li>
+                    <li class="hidden"><a href="#">Wish List</a></li>
+                    <li class="hidden"><a href="#">Newsletter</a></li>
+                    <li class="hidden"><a href="cart.html">Order History</a></li>
+                </ul>
+            </div>
+
+
+            <div class="box">
+                <h1 class="hidden">Get in touch</h1>
+                <p class="hidden">Address: Your address goes here Telephone Enquiry: (012) 345 6789 Email: demo@example.com</p>
+                <p class="hidden">Open : <span>8:00 AM</span> - Close : <span>18:00 PM</span> Saturday - Sunday : Close</p>
+            </div>
+
+        </div>
+
+        <div class="copyright hidden">Copyright ©2025 All rights reserved</div>
+    </footer>
+    <script src="./login.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <form action="" class="LogForm" target="_self" onsubmit="checkUser(event)">
+    <div id="form1">
+        <label for="userName" class="user">User Name : </label>
+        <input type="text" placeholder="User Name" name="userName" class="inputs" id="userName" required>
+        <label for="pass" class="user">Password : </label>
+        <input type="password" placeholder="Password" name="pass" class="inputs" id="password" required>
+        <input type="checkbox" name="rem" class="rem" id="rememberMe">
+        <label for="rememberMe" class="rem"> Remember me</label>
+        <input type="submit" class="btn" value="Login">
+    </div>
+</form>
+
+<script>
+    function saveCredentials(userName, password) {
+        // تخزين القيم في Local Storage
+        localStorage.setItem('userName', userName);
+        localStorage.setItem('password', password);
+        alert('تم حفظ بياناتك بنجاح في Local Storage!');
+    }
+
+    function checkUser(event) {
+        // منع إعادة التحميل الافتراضي للصفحة
+        event.preventDefault();
+
+        // الحصول على القيم من الحقول
+        const userName = document.getElementById('userName').value;
+        const password = document.getElementById('password').value;
+        const rememberMe = document.getElementById('rememberMe').checked;
+
+        // التحقق إذا كان اسم المستخدم مسجل في Local Storage
+        const storedUserName = localStorage.getItem('userName');
+        const storedPassword = localStorage.getItem('password');
+
+        if (!storedUserName || storedUserName !== userName) {
+            alert('المستخدم غير مسجل!');
+        } else {
+            // تحقق من كلمة المرور إذا أردت
+            if (storedPassword === password) {
+                alert('تم تسجيل الدخول بنجاح!');
+                // هنا يمكنك إعادة توجيه المستخدم أو تنفيذ أي إجراء آخر
+            } else {
+                alert('كلمة المرور غير صحيحة!');
+            }
+        }
+
+        // إذا كان "Remember Me" محددًا، احفظ البيانات
+        if (rememberMe) {
+            saveCredentials(userName, password);
+        }
+    }
+</script> -->
